@@ -1,0 +1,28 @@
+{
+  "chrome_user_data_dir": "C:/Users=barab/Desktop/merlin_chrome_profile",
+  "wait_timeout": 90,
+  "response_wait_time": 20,
+  "max_retries": 8,
+  "headless": false,
+  "merlin_site_url": "https://www.getmerlin.in/hu/chat",
+  "merlin_input_selectors": [
+    "div[contenteditable='true'][role='textbox']",
+    "div[contenteditable='true'].tiptap",
+    "div.tiptap.ProseMirror[contenteditable='true']",
+    "textarea[placeholder*='Ask']",
+    "textarea[placeholder*='Type']",
+    "[data-testid='chat-input']",
+    "input.relative.z-50.h-full.w-full.rounded-full",
+    "input[type='text'][class*='rounded-full']"
+  ],
+  "merlin_submit_selectors": [
+    "button.relative.z-40.ml-2.flex.h-10.w-10.items-center.justify-center"
+  ],
+  "merlin_response_selectors": [
+    "div.flex.flex-col.items-start.whitespace-pre-wrap.break-words",
+    "div.message-content"
+  ],
+  "merlin_copy_button_selector": [
+    "svg.lucide-copy"
+  ]
+}
