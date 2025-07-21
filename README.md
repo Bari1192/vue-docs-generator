@@ -13,7 +13,7 @@ Python alapú, **félautomata** rendszer, amely a [GetMerlin.in](https://www.get
 - 🛡️ **Részletes hibaüzenetek és magyar nyelvű workflow**
 - 📋 **Automatikus vágólap kezelés** a válaszok kinyeréséhez
 
-## 🛠️ Telepítési útmutató
+## 🛠️ Telepítési és elindítási útmutató
 
 ### 1. Python és Chrome/Chromedriver
 
@@ -28,7 +28,7 @@ git clone https://github.com/yourusername/vue-merlin-docs-generator
 cd vue-merlin-docs-generator
 ```
 
-### 3. Csomagok telepítése
+### 3. Csomagok telepítése - ⚠️ Előfeltétel ⚠️
 
 ```bash
 pip install pyperclip undetected-chromedriver selenium
@@ -40,7 +40,6 @@ pip install pyperclip undetected-chromedriver selenium
 vue-merlin-docs-generator/
 ├── vue_docs_generator.py       # Fő szkript
 ├── config.json                 # Konfigurációs beállítások
-├── requirements.txt            # Python függőségek
 ├── README.md                   # Telepítési és használati útmutató
 ├── docs_generated/             # Generált dokumentációk
 └── src/
@@ -196,7 +195,6 @@ Igen! De először próbáld ki látható módban, hogy minden működik-e.
 vue-merlin-docs-generator/
 ├── vue_docs_generator.py        # Fő Python szkript, minden automatizálás itt történik
 ├── config.json                  # Konfigurációs beállítások, selectorok, timeoutok
-├── requirements.txt             # Python függőségek listája
 ├── README.md                    # Teljes telepítési és használati útmutató
 └── docs_generated/              # Kimeneti dokumentációk (generált .md fájlok)
     └── (itt jönnek létre az outputok)
@@ -243,9 +241,6 @@ vue-merlin-docs-generator/
 
 - **config.json:**
   Speciális selectorok, timeout értékek, URL-ek, böngésző beállítások.
-
-- **requirements.txt:**
-  Minden szükséges Python csomagot automatikusan telepít.
 
 ---
 
